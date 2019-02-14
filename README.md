@@ -8,7 +8,7 @@ Gelingt es nicht und es findet eine Kollision statt, wird eine traurige Raupe an
 <br>
 Ist das letzte Level des Spiels erreicht wird die Raupe zu einem Schmetterling.<p>
 <br>
-Studentin: Laura Rainer
-Matrikelnummer: 664281
+Studentin: Laura Rainer<p>
+Matrikelnummer: 664281<p>
 <br>
-Die App wurde während der Entwicklung auf das Display des Huawei CAN-L11 Smartphones angepasst und auf Displays mit der Auflösung von 1920x1080 fehlerfrei getestet.
+Die App wurde während der Entwicklung auf das Display des Huawei CAN-L11 Smartphones angepasst und auf Displays mit der Auflösung von 1920x1080 getestet, ohne Fehler.
