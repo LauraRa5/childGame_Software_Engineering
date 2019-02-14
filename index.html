@@ -1,0 +1,134 @@
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-height">
+  <link rel="stylesheet" type="text/css" href="jQuery/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" type="text/css" href="css/mycss.css">
+  <link rel="manifest" href="manifest.json">
+  <script type="text/javascript" src="jQuery/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <title>Kinder-App: Mache die Raupe zum Schmetterling</title>
+
+</head>
+<body>
+  <div id="allumfassend" class="container-fl">
+    <div data-role="page" id="p0">
+      <div data-role="content">
+        <img src="img/startHintergrund.png" alt="Hintergrund" id="startHintergrund">
+        <img src="img/startWolken.png" alt="Wolken" id="startWolken">
+        <img src="img/startSteine.png" alt="Steine" id="startSteine">
+        <img src="img/startGras.png" alt="Gras" id="startGras">
+        <img src="img/startRaupe.png" alt="Raupe" id="startRaupe">
+        <img src="img/startSchmetterlingrot.png" alt="Schmetterling rot" id="startSchmetterlingrot">
+        <img src="img/startSchmetterlingblau.png" alt="Schmetterling blau" id="startSchmetterlingblau">
+        <a href ="#p1" data-transition="fade" id="startButton" class="startbutton hvr-pop"><img src="img/startButton.png" alt="Button" id="startButton"></a>
+      </div>
+    </div>
+    <div data-role="page" id="p1">
+      <div data-role="content">
+        <div id="geschichte">
+          <img class="img-fluid" id="geschichteHintergrund" src="img/geschichteHintergrund.png">
+          <img class="img-fluid" id="geschichteGras" src="img/geschichteGras.png">
+          <img class="img-fluid" id="geschichteRaupeStein" src="img/geschichteRaupeStein.png">
+          <img class="img-fluid" id="geschichteSchmetterlinge" src="img/geschichteSchmetterlinge.png">
+        </div>
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe" src="img/raupenkopf.png">
+        <a href ="#p1" id="buttonrestart1" class="button"><img class="hvr-pulse rot" src="img/apfelrot.png"></a>
+        <a href ="#p2" id="buttonLevel2" class="button"><img class="hvr-pulse gruen" src="img/apfelgruen.png"></a>
+        <canvas id="canvas" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p2">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe2" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe2" src="img/raupenkopf.png">
+        <a href ="#p2" id="buttonLevel2wiederholen" class="button"><img class="hvr-pulse gruen" src="img/apfelgruen.png"></a>
+        <a href ="#p3" id="buttonLevel3" class="button"><img class="hvr-pulse gelb"  src="img/apfelgelb.png"></a>
+        <canvas id="canvas2" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p3">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe3" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe3" src="img/raupenkopf.png">
+        <a href ="#p3" id="buttonLevel3wiederholen" class="button"><img class="hvr-pulse gelb" src="img/apfelgelb.png"></a>
+        <a href ="#p4" id="buttonLevel4" class="button"><img class="hvr-pulse gruengelb"  src="img/apfelgruengelb.png"></a>
+        <canvas id="canvas3" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p4">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe4" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe4" src="img/raupenkopf.png">
+        <a href ="#p4" id="buttonLevel4wiederholen" class="button"><img class="hvr-pulse gruengelb"  src="img/apfelgruengelb.png"></a>
+        <a href ="#p5" id="buttonLevel5" class="button"><img class="hvr-pulse rot" src="img/apfelrot.png"></a>
+        <canvas id="canvas4" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p5">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe5" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe5" src="img/raupenkopf.png">
+        <a href ="#p5" id="buttonLevel5wiederholen" class="button"><img class="hvr-pulse rot"  src="img/apfelrot.png"></a>
+        <a href ="#p6" id="buttonLevel6" class="button"><img class="hvr-pulse rotgelb"  src="img/apfelrotgelb.png"></a>
+        <canvas id="canvas5" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p6">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe6" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe6" src="img/raupenkopf.png">
+        <a href ="#p6" id="buttonLevel6wiederholen" class="button"><img class="hvr-pulse rotgelb"  src="img/apfelrotgelb.png"></a>
+        <a href ="#p7" id="buttonLevel7" class="button"><img class="hvr-pulse gruen" src="img/apfelgruen.png"></a>
+        <canvas id="canvas6" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p7">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe7" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe7" src="img/raupenkopf.png">
+        <a href ="#p7" id="buttonLevel7wiederholen" class="button"><img class="hvr-pulse gruen" src="img/apfelgruen.png"></a>
+        <a href ="#p8" id="buttonLevel8" class="button"><img class="hvr-pulse rotgruen" src="img/apfelrotgruen.png"></a>
+        <canvas id="canvas7" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p8">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe8" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe8" src="img/raupenkopf.png">
+        <a href ="#p8" id="buttonLevel8wiederholen" class="button"><img class="hvr-pulse rotgruen" src="img/apfelrotgruen.png"></a>
+        <a href ="#p9" id="buttonLevel9" class="button"><img class="hvr-pulse rot" src="img/apfelrot.png"></a>
+        <canvas id="canvas8" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p9">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe9" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe9" src="img/raupenkopf.png">
+        <a href ="#p9" id="buttonLevel9wiederholen" class="button"><img class="hvr-pulse rot" src="img/apfelrot.png"></a>
+        <a href ="#p10" id="buttonLevel10" class="button"><img class="hvr-pulse rotgruen" src="img/apfelrotgruen.png"></a>
+        <canvas id="canvas9" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p10">
+      <div data-role="content">
+        <img class="img-fluid verlorenRaupe" id="verlorenRaupe10" src="img/traurigeraupe.png">
+        <img class="img-fluid gewonnenRaupe" id="gewonnenRaupe10" src="img/raupenkopf.png">
+        <a href ="#p10" id="buttonLevel10wiederholen" class="button"><img class="hvr-pulse rotgruen" src="img/apfelrotgruen.png"></a>
+        <a href ="#p11" id="buttonEnde" class="button"><img src="img/apfelrotgruen.png" alt="Button"></a>
+        <canvas id="canvas10" class="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+      </div>
+    </div>
+    <div data-role="page" id="p11">
+      <div data-role="content">
+        <img class="img-fluid" id="endeHintergrund" src="img/endeHintergrund.png">
+        <img class="img-fluid" id="endeSchmetterlinge" src="img/endeSchmetterlinge.png">
+      </div>
+      <script type="text/javascript" src="js/myjs.js"></script>
+    </body>
+    </html>

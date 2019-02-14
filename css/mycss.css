@@ -1,0 +1,324 @@
+/************************************
+CSS-Gesaltung Grundlagen
+************************************/
+html, body {
+  width: 90%;
+  height: 90%;
+}
+
+#allumfassend {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ui-content, .ui-page{padding: 0;
+  margin: 0;}
+
+
+  /************************************
+  Start-Bildschirm
+  ************************************/
+  #startHintergrund{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  #startWolken{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+
+  #startSteine{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+  }
+
+  #startRaupe{
+    width: 42%;
+    height: auto;
+    position: absolute;
+    bottom: 1em;
+    left: 10em;
+    z-index: 4;
+  }
+
+  #startGras{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+  }
+
+  #startSchmetterlingrot{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    z-index: 6;
+  }
+
+  #startSchmetterlingblau{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 2em;
+    left: 4rem;
+    z-index: 6;
+  }
+
+  #startButton{
+    height: 5em;
+    position: absolute;
+    top: 5.5em;
+    right: 3em;
+    z-index: 6;
+  }
+
+
+  /************************************
+  Geschichte
+  ************************************/
+  #geschichteHintergrund{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+  }
+  #geschichteGras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+  #geschichteRaupeStein{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  #geschichteSchmetterlinge{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    display: block;
+    top: 2em;
+    left: 15em;
+    z-index: 11;
+  }
+
+  /************************************
+  Ende
+  ************************************/
+  #buttonEnde{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4em;
+    margin-left: 9em;
+  }
+  #endeHintergrund{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+  }
+  #endeSchmetterlinge{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    display: block;
+    top: 2em;
+    left: 1em;
+    z-index: 11;
+  }
+
+  /************************************
+  Apfel-Buttons
+  ************************************/
+  .rot{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4em;
+    margin-left: 9em;
+  }
+  .gruen{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4em;
+    margin-left: 9em;
+  }
+  .gelb{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4em;
+    margin-left: 9em;
+  }
+  .rotgruen{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4em;
+    margin-left: 9em;
+  }
+  .gruengelb{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4em;
+    margin-left: 9em;
+  }
+  .rotgelb{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 4em;
+    margin-left: 9em;
+  }
+
+  /************************************
+  Levels
+  ************************************/
+  .canvas {
+    max-width: 100%;
+    height: auto;
+    z-index: 10;
+  }
+
+  #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11 {
+    background-color: #90ee90;
+    margin: 0;
+    padding:0;
+  }
+
+  .verlorenRaupe {
+    width: auto;
+    height: auto;
+    display: none;
+    margin-left: 4em;
+    margin-top: 2em;
+    z-index: 100;
+  }
+
+  .gewonnenRaupe {
+    width: auto;
+    height: auto;
+    display: none;
+    margin-left: 4em;
+    margin-top: 1.8em;
+    z-index: 100;
+  }
+
+  .button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    left: 20em;
+    right: 2em;
+    top: 9em;
+  }
+
+  /************************************
+  Pulse-Effekt von hvr.css
+  http://ianlunn.github.io/Hover/
+  ************************************/
+  @-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  /************************************
+  Pop-Effekt von hvr.css
+  http://ianlunn.github.io/Hover/
+  ************************************/
+  @-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.02);
+      transform: scale(1.02);
+    }
+  }
+
+  .hvr-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
